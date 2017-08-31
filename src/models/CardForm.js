@@ -137,6 +137,11 @@ class CardForm {
       {}
     );
   }
+  disable () {
+    Object.keys(this.inputs).forEach(key => {
+      this.inputs[key].disable();
+    });
+  }
   forceTouched() {
     Object.keys(this.inputs).forEach(key => {
       this.inputs[key].setTouched();

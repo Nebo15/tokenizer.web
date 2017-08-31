@@ -12,6 +12,9 @@ class App {
 
   onMessage (event) {
     switch (event.data.action) {
+      case 'disable':
+      this.form.disable();
+      break;
       case 'getToken':
       this.onGetToken(event);
       break;

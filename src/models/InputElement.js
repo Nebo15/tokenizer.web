@@ -43,6 +43,9 @@ class InputElement {
   select () {
     this.element.select();
   }
+  disable() {
+    this.element.disabled = true;
+  }
   setTouched() {
     this.touched = true;
   }
